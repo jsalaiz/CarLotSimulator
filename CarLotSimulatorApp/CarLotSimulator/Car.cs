@@ -6,10 +6,11 @@ namespace CarLotSimulator
 {
     public class Car
     {
-        //Create a seperate class file called Car
-        //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
-        //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
-        //The methods should take one string parameter: the respective noise property
+        public Car()
+        {
+            CarLot.NumberOfCars++;
+            Console.WriteLine($"The Number of cars in the carlot now is: {CarLot.NumberOfCars}");
+        }
 
         public int Year { get; set; }
         public string Make { get; set; }
